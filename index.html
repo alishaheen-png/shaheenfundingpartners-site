@@ -1,119 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shaheen Funding — shaheenfundingpartners.com</title>
-<meta name="description" content="shaheenfundingpartners.com carries business outreach correspondence for Shaheen Funding. Main site: shaheenfunding.com.">
-<style>
-  :root {
-    --bg: #FAFAF8;
-    --panel: #FFFFFF;
-    --text: #14171C;
-    --muted: #4B5563;
-    --accent: #0F4C81;
-    --border: #E5E7EB;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-  .wrap {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
-    width: 100%;
-  }
-  .mark {
-    display: inline-block;
-    font-size: 0.85rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  h1 {
-    font-size: 1.85rem;
-    line-height: 1.25;
-    margin: 0 0 1.25rem;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-  p {
-    margin: 0 0 1rem;
-    color: var(--muted);
-    font-size: 1.05rem;
-  }
-  p:last-of-type { margin-bottom: 0; }
-  a {
-    color: var(--accent);
-    text-decoration: underline;
-    text-decoration-color: rgba(15, 76, 129, 0.35);
-    text-underline-offset: 2px;
-    font-weight: 600;
-  }
-  a:hover, a:focus {
-    text-decoration-color: var(--accent);
-  }
-  .contact-card {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.5rem 1.75rem;
-    margin-top: 2rem;
-  }
-  .contact-card p {
-    color: var(--muted);
-    font-size: 0.95rem;
-  }
-  .contact-email {
-    display: inline-block;
-    margin-top: 0.25rem;
-    font-size: 1.1rem;
-  }
-  footer {
-    margin-top: 2.5rem;
-    font-size: 0.85rem;
-    color: var(--muted);
-  }
-  @media (max-width: 480px) {
-    .wrap { padding: 2.5rem 1.25rem; }
-    h1 { font-size: 1.5rem; }
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0B0D10;
-      --panel: #14171C;
-      --text: #EDEEF0;
-      --muted: #9CA3AF;
-      --accent: #6FA8DC;
-      --border: #262B32;
-    }
-  }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shaheen Funding | shaheenfundingpartners.com</title>
+<meta name="description" content="shaheenfundingpartners.com is an outreach domain of Shaheen Funding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+<style>:root{--ground:#FAF9F5;--ivory:#F0EEE6;--ink:#141413;--mute:#5E5D59;--line:#E3E0D5;
+--clay:#CC785C;--clay-ink:#9A4A2A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);
+font:400 17px/1.65 "Instrument Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.top{border-bottom:1px solid var(--line)}
+.bar{max-width:1040px;margin:0 auto;padding:22px 28px;display:flex;align-items:baseline;
+justify-content:space-between;gap:16px;flex-wrap:wrap}
+.word{font:500 21px/1 "Source Serif 4",Georgia,serif;letter-spacing:-.01em;color:var(--ink);
+text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.word i{width:9px;height:9px;border-radius:50%;background:var(--clay);display:inline-block}
+.dom{font-size:13px;color:var(--mute);letter-spacing:.02em}
+main{max-width:1040px;margin:0 auto;padding:96px 28px 72px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+color:var(--clay-ink);margin:0 0 22px}
+h1{font:400 clamp(38px,6vw,64px)/1.06 "Source Serif 4",Georgia,serif;letter-spacing:-.02em;
+margin:0 0 26px;max-width:17ch;overflow-wrap:anywhere}
+.lede{font-size:20px;line-height:1.55;color:var(--mute);max-width:52ch;margin:0}
+.rule{height:1px;background:var(--line);margin:72px 0 0;position:relative}
+.rule:before{content:"";position:absolute;left:0;top:-1px;width:56px;height:3px;background:var(--clay)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px 56px;margin-top:48px}
+.item .n{font:400 15px/1 "Source Serif 4",Georgia,serif;color:var(--clay-ink);margin-bottom:14px;display:block}
+.item h2{font:500 24px/1.25 "Source Serif 4",Georgia,serif;margin:0 0 12px;letter-spacing:-.01em}
+.item p{margin:0 0 12px;color:var(--ink)}
+.card{background:var(--ivory);border-radius:14px;padding:36px 36px 32px;margin-top:56px;max-width:680px}
+.card h2{font:500 24px/1.25 "Source Serif 4",Georgia,serif;margin:0 0 10px}
+.card p{margin:0 0 14px}
+a{color:var(--clay-ink);text-decoration:underline;text-decoration-thickness:1px;
+text-underline-offset:3px;text-decoration-color:rgba(154,74,42,.4)}
+a:hover{text-decoration-color:var(--clay-ink)}
+a:focus-visible{outline:2px solid var(--clay-ink);outline-offset:3px;border-radius:2px}
+.btn{display:inline-block;margin-top:6px;padding:12px 20px;border-radius:999px;background:var(--ink);
+color:var(--ground);text-decoration:none;font-weight:500;font-size:15px}
+.btn:hover{background:#2b2a27}
+footer{border-top:1px solid var(--line)}
+.foot{max-width:1040px;margin:0 auto;padding:28px;display:flex;justify-content:space-between;
+gap:18px;flex-wrap:wrap;color:var(--mute);font-size:14px}
+.rise{opacity:0;transform:translateY(10px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}.d4{animation-delay:.4s}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rise{animation:none;opacity:1;transform:none}}
+@media (max-width:600px){main{padding:64px 22px 56px}.card{padding:28px 24px}h1{font-size:34px}}</style>
 </head>
 <body>
-<div class="wrap">
-  <span class="mark">Shaheen Funding</span>
-  <h1>This domain carries Shaheen Funding's business outreach correspondence.</h1>
-  <p>shaheenfundingpartners.com is used by Shaheen Funding, a funding advisory business working with companies in the UAE, for outreach correspondence. Shaheen Funding advises and introduces; it does not lend and does not act as agent for any lender.</p>
-  <p>Our main site is at <a href="https://shaheenfunding.com">shaheenfunding.com</a>.</p>
-
-  <div class="contact-card">
-    <p>For any enquiry, reach us directly by email.</p>
-    <a class="contact-email" href="mailto:asser@shaheenfunding.com">asser@shaheenfunding.com</a>
-  </div>
-
-  <footer>Shaheen Funding</footer>
-</div>
+<header class="top"><div class="bar">
+<a class="word" href="https://shaheenfunding.com"><i aria-hidden="true"></i>Shaheen Funding</a>
+<span class="dom">shaheenfundingpartners.com</span>
+</div></header>
+<main>
+<p class="eyebrow rise d1">shaheenfundingpartners.com</p>
+<h1 class="rise d2">This domain is part of Shaheen Funding.</h1>
+<p class="lede rise d3">Shaheen Funding is an independent funding advisory firm for UAE businesses. We use this domain for our business outreach.</p>
+<div class="card rise d4"><h2>Looking for us?</h2>
+<p>Our main site is <a href="https://shaheenfunding.com">shaheenfunding.com</a>. For any enquiry, reach us directly by email.</p>
+<a class="btn" href="mailto:asser@shaheenfunding.com">asser@shaheenfunding.com</a></div>
+</main>
+<footer><div class="foot">
+<span>Shaheen Funding &middot; <a href="https://shaheenfunding.com">shaheenfunding.com</a></span>
+<span>Independent funding advisers. We work on the business's side: we prepare the case and take it to the lenders that fit.</span>
+</div></footer>
 </body>
 </html>
